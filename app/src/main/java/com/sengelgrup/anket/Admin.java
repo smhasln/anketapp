@@ -36,7 +36,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 public class Admin extends AppCompatActivity implements OnChartValueSelectedListener{
 
-    //deneme
+    //denemed
 
     private String[] sabit = {"OCAK", "ŞUBAT", "MART","NISAN","MAYIS","HAZIRAN","TEMMUZ","AGUSTOS","EYLUL","EKIM","KASIM","ARALIK"};
 
