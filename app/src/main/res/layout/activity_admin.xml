@@ -116,7 +116,7 @@
         android:id="@+id/btn_tumu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:padding="10dp"
         android:text="TÜMÜ"
@@ -127,11 +127,11 @@
         android:id="@+id/btn_filtrele"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:padding="10dp"
         android:text="FİLTRELE"
-        app:layout_constraintStart_toStartOf="@+id/txt_ort"
+        app:layout_constraintStart_toEndOf="@+id/spinner_yil"
         app:layout_constraintTop_toBottomOf="@+id/txt_ort" />
 
     <TextView
@@ -202,5 +202,25 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_ayar"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_person_pin_black_24dp" />
+
+    <Spinner
+        android:id="@+id/spinner_yil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/spinner_bitis"
+        app:layout_constraintTop_toBottomOf="@+id/txt_anket_sayi" />
+
+    <ImageButton
+        android:id="@+id/img_ist_mail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.constraint.ConstraintLayout>
